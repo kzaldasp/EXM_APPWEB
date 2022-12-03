@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "EXAMEN CLOUD COMPUTING";
+}
+
+<div class="text-center" method="post">
+    <h1 class="display-4">EXAMEN CLOUD COMPUTING</h1>
+    <h1 class="display-4">KEVIN ALDAS</h1>
+    <hr />
+    <form method="post">
+
+        <div class="text-center">
+            <input type="text" name="ruta" placeholder="RUTA DE IMAGEN" size="30" style="border: 2px; 
+              border-radius: 40px;
+              height: 40px;
+              padding: 0 11px;
+              font-size: 14px;
+              display: flex;
+              align-items: center;" />
+            <p class="text-center">
+            <label>@Html.Raw(ViewBag.ruta)</label>
+            </p>
+            <button type="submit" class="btn-group" style="
+            display: block;
+            color: #0099CC;
+            background: transparent;
+            border: 2px solid #0099CC;
+            border-radius: 6px;
+            hover{
+            background-color: #008CBA;
+            color: white;
+               };
+            ">ENVIAR</button>
+        </div>
+       
+       
+        <div class="text-center">
+            
+        </div>
+      
+        <div style="text-align:center">
+            <label>@Html.Raw(ViewBag.text)</label>
+        </div>
+    </form>
+    
+</div>
